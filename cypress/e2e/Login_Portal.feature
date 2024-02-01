@@ -1,3 +1,4 @@
+@login @regression
 Feature: WebdriverUniversity - Login Portal Page
 
         Scenario Outline: Validate Login Submission

@@ -1,4 +1,5 @@
 
+@contact-us @regression
 Feature: WebdriverUniversity - Contact Us Page
 
 Feature Description Example
@@ -29,7 +30,8 @@ Feature Description Example
               And I type a specific word "hello123" and number 6788 within the comment input field
               And I click on the submit button
              Then I should be presented with a successful contact us submission message
-
+        
+        @smoke
         Scenario Outline: Validate contact us page
               And I type a first name '<firstName>' and a last name '<lastName>'
               And I type a '<emailAddress>' and a comment '<comment>'
