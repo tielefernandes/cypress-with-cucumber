@@ -1,11 +1,13 @@
 
 Feature: WebdriverUniversity - Contact Us Page
 
-Feature Description
+Feature Description Example
 
-        Scenario: Valid Contact Us Form Submission
+        Background: Pre conditions
             Given I navigate to the webdriveruniversity homepage
              When I click on the contact us button
+
+        Scenario: Valid Contact Us Form Submission
               And I type a first name
               And I type a last name
               And I enter an email address
@@ -14,8 +16,6 @@ Feature Description
              Then I should be presented with a successful contact us submission message
 
         Scenario: Invalid Contact Us Form Submission
-            Given I navigate to the webdriveruniversity homepage
-             When I click on the contact us button
               And I type a first name
               And I type a last name
               And I type a comment
@@ -23,8 +23,6 @@ Feature Description
              Then I should be presented with a unsuccessful contact us submission message
 
         Scenario: Valid Contact Us Form Submissiona - Using specific data
-            Given I navigate to the webdriveruniversity homepage
-             When I click on the contact us button
               And I type specific first name "Sarah"
               And I type specific last name "Woods"
               And I type a specific email address "sarah_woods101@mail.com"
@@ -33,8 +31,6 @@ Feature Description
              Then I should be presented with a successful contact us submission message
 
         Scenario Outline: Validate contact us page
-            Given I navigate to the webdriveruniversity homepage
-             When I click on the contact us button
               And I type a first name '<firstName>' and a last name '<lastName>'
               And I type a '<emailAddress>' and a comment '<comment>'
               And I click on the submit button
